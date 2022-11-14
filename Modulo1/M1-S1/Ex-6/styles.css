@@ -1,0 +1,33 @@
+h1 {
+    text-align: center;
+    font-family: Verdana;
+    font-size: 20px;
+    color: #C0E0DE;
+    background-image: url("big-galaxy.jpg");
+    background-repeat: no-repeat;
+}
+
+p {
+    font-size: 14px;
+}
+
+body {
+    background-color: #E1DEE9;
+}
+
+#botao {
+    width: 1.5%;
+    border: 2px solid black;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#imagens {
+    display: flex;
+}
+
+.column {
+    flex: 33.33%;
+    padding: 5px;
+}
