@@ -1,0 +1,8 @@
+<div class="container" *ngFor="let item of itens">
+    <ul class="list-group" [ngClass]="item.lido == true ? 'lido' : 'nlido'">
+        <li class="list-group-item">{{ item.titulo }}</li>
+        <li class="list-group-item">{{ item.subtitulo }}</li>
+        <li class="list-group-item">{{ item.data }}</li>
+        <li class="list-group-item"><button [ngClass]="item.lido == true ? 'btn btn-success' : 'btn btn-danger'" (click)="item.lido=!item.lido">Lido <i [ngClass]="item.lido == true ? 'bi bi-check' : 'bi bi-x-lg'"></i></button></li>
+    </ul>
+</div>
