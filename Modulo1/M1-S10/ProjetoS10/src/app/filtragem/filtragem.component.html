@@ -1,0 +1,7 @@
+<div class="container">
+    <div class="list-group list-group-horizontal mt-4">
+        <a routerLink='/home/{{i}}' type="button" class="list-group-item" *ngFor="let i of item" (click)="handleFilter(i)">
+            {{ i | titlecase }}
+        </a>
+    </div>
+</div>
